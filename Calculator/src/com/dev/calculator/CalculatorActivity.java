@@ -22,7 +22,7 @@ public class CalculatorActivity extends ActionBarActivity implements OnClickList
 	// This boolean is set to true when user selects any operator so that we dont end up in adding multiple operators.	
 	static boolean isOperatorUsed = false;
 	
-	// To Store the operator stored by the user.
+	// To Store the operator selected by the user.
 	private static String mOperator;
 	
 	// To store the operands and results.
