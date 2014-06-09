@@ -209,7 +209,7 @@ public class CalculatorActivity extends ActionBarActivity implements OnClickList
 	
 	
 	private void clearInputField() {		
-		// Append the operator to the input.
+		// Clear the text in the inputEditor.
 		inputValues.setText("");
 	}
 	
