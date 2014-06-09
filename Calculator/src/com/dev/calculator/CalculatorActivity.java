@@ -189,13 +189,29 @@ public class CalculatorActivity extends ActionBarActivity implements OnClickList
 		}
 		
 		if(mOperator.equals(getResources().getString(R.string.action_add))) {
-			mResult = mNumberValue1 + mNumberValue2;
+			try {
+				mResult = mNumberValue1 + mNumberValue2;
+			} catch (ArithmeticException e) {
+				System.out.println("** Exception is caught: " + e.getMessage());				
+			}
 		} else if(mOperator.equals(getResources().getString(R.string.action_subtract))) {
-			mResult = mNumberValue1 - mNumberValue2;
+			try {
+				mResult = mNumberValue1 - mNumberValue2;
+			} catch (ArithmeticException e) {
+				System.out.println("** Exception is caught: " + e.getMessage());				
+			}			
 		} else if(mOperator.equals(getResources().getString(R.string.action_multiply))) {
-			mResult = mNumberValue1 * mNumberValue2;
+			try {
+				mResult = mNumberValue1 * mNumberValue2;
+			} catch (ArithmeticException e) {
+				System.out.println("** Exception is caught: " + e.getMessage());				
+			}
 		} else if(mOperator.equals(getResources().getString(R.string.action_divide))) {
-			mResult = mNumberValue1 / mNumberValue2;
+			try {
+				mResult = mNumberValue1 / mNumberValue2;
+			} catch (ArithmeticException e) {
+				System.out.println("** Exception is caught: " + e.getMessage());				
+			}			
 		}
 		
 		// Set the result to input Editor to present it to user.
