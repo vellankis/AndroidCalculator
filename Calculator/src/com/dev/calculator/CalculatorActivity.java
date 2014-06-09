@@ -198,6 +198,7 @@ public class CalculatorActivity extends ActionBarActivity implements OnClickList
 			mResult = mNumberValue1 / mNumberValue2;
 		}
 		
+		// Set the result to input Editor to present it to user.
 		inputValues.setText(String.valueOf(mResult));
 		
 		// To place the cursor at the end of the input values
